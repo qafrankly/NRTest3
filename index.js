@@ -1,9 +1,25 @@
+import React, { Component, PropTypes } from 'react';
 
-                        "id": "components/social/TwitterFeed",
-                        "FRN_style": {}
-                        "props": {
-                            "title": "Twitter News",
-                            "screenName": "frankly_inc",
-                            "widgetId": "735176068399652865"
-                        }
+class RandomTest extends Component {
+  static PropTypes = {
+    h1: PropTypes.string,
+    h2: PropTypes.string,
+  }
+  {
+    let {
+      h2 = 'sup this a github edit',
+    } = this.props;
+
+    let {
+      flux, config
+    } = this.context;
+
+    return (
+      <div>
+        <h2>{h2}</h2>
+      </div>
+    );
+  }
 }
+
+export default RandomTest;
