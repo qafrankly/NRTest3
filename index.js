@@ -9,7 +9,7 @@ class HomePageTakeover extends Component {
 
   render(){ //REQUIRED
     return (<div className="blah">test</div>) 
-  
+            }
 }
 
 export default HomePageTakeover;
