@@ -5,7 +5,7 @@ class RandomTest extends Component {
     h1: PropTypes.string,
     h2: PropTypes.string,
   }
-  {
+  render(){
     let {
       h2 = 'sup this a github edit',
     } = this.props;
