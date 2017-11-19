@@ -7,9 +7,10 @@ class HomePageTakeover extends Component {
     this.state = {} /* great place to assign default state */
   }
   
-  render() { 
+  render(){ //REQUIRED
     return (<div className="blah">test</div>) 
             } 
 }
+            
 export default HomePageTakeover;
             
