@@ -1,2 +1,2 @@
 render()
-{ return (<div className="blah">test</div>); }
+{ return (<div className="blah">test</div>) }
