@@ -21,7 +21,7 @@ class Asdf extends Component ,{
   render(){
     let {
       //h1 = dep(),
-      h2 = 'Hi TL welcome to Custom Modules! :)'
+      h2 = (Hi TL welcome to Custom Modules);
     } = this.props;
 
     let {
