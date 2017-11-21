@@ -1,15 +1,41 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
-class HomePageTakeover extends Component {
+//import RandomQwerty from 'axelbrock/qwerty';
+//<RandomQwerty />
 
-  constructor(props){ //gives us acces to props, fires long before page load
-    super(props) //assigns props to this.props
-    this.state = {} /* great place to assign default state */
+import _ from 'lodash';
+
+import Dep from './dep';
+
+const a = [1];
+const b = [2,3];
+const c = 'test';
+
+const otherarray = _.concat(a, b)
+
+class Asdf extends Component ,{
+  static PropTypes = {
+    h1: PropTypes.string,
+    h2: PropTypes.string,
   }
+  render(){
+    let {
+      //h1 = dep(),
+      h2 = 'Hi TL welcome to Custom Modules! :)'
+    } = this.props;
 
-  render(){ //REQUIRED
-    return (<div className="blah">test</div>) 
-            }
+    let {
+      flux, config
+    } = this.context;
+
+    return (
+      <div>
+        <h2>the ASDF component</h2>
+	<h2>{otherarray[2]}</h2>
+	<Dep />
+      </div>
+    );
+  }
 }
 
-export default HomePageTakeover;
+export default Asdf;
